@@ -1,0 +1,14 @@
+{
+  "login_credentials": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "product": {
+    "item_name": "Sauce Labs Backpack"
+  },
+  "checkout_info": {
+    "first_name": "Pooria",
+    "last_name": "Zamani",
+    "postal_code": "12345"
+  }
+}
