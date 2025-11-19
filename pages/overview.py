@@ -23,5 +23,8 @@ class OverviewPage:
         complete_header=driver.find_element(By.CSS_SELECTOR,"[class='complete-header']").text
         assert complete_header=="Thank you for your order!", "Order not complete"
         print("Order complete:", complete_header)
+        #take screenshot
+        driver.save_screenshot("order_complete.png")
         time.sleep(2)
+
   

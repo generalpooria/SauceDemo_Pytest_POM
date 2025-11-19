@@ -8,7 +8,7 @@ The main test case covers a complete user purchase flow:
 3.  Navigate to the cart and verify the item.
 4.  Proceed to checkout and fill in user information.
 5.  Verify the order details on the overview page.
-6.  Finalize the purchase and confirm the order completion.
+6.  Finalize the purchase, confirm the order, and save a screenshot of the completion page (`order_complete.png`).
 
 ## Core Concepts & Technologies
 
@@ -20,6 +20,7 @@ This project was created to practice and demonstrate the following concepts:
 *   **Data-Driven Testing**: Test data (credentials, user info) is externalized into a `test_data.json` file, making tests more flexible and easier to manage.
 *   **Pytest Fixtures**: Used for setup and teardown operations, such as initializing the WebDriver and loading test data (`conftest.py`).
 *   **HTML Test Reports**: Generating a clear, shareable HTML report of the test results using `pytest-html`.
+*   **Screenshots for Evidence**: Automatically taking a screenshot upon successful order completion to provide visual proof.
 
 ## Prerequisites
 
@@ -46,6 +47,8 @@ To run the tests and generate an HTML report, execute the following command in y
 
 ```bash
 pytest -v -s --html=report.html
+or
+python -m pytest -v -s --html=report.html
 ```
 
 After the test run is complete, you can open `report.html` in your browser to see the detailed results.
